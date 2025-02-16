@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse4pet</title>
+
+    <!-- daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+      <!-- icon -->
+      <script src="https://kit.fontawesome.com/d6cca711b9.js" crossorigin="anonymous"></script>
+
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+      <style>
+        .sora {
+  font-family: "Sora", serif;
+}
+      </style>
+
+</head>
+<body class="sora">
+    <!-- header  -->
+     <header>
+
+        <!-- navbar -->
+
+        <section>
+            <div class="navbar bg-[#FFF9F4] lg:px-24">
+                <div class="navbar-start">
+                  
+                  <!-- left side  -->
+                   <!-- logo -->
+                  <img src="c1-assets/logo-header.png" alt="">
+                  <!-- title -->
+                  <a class="btn btn-ghost text-xl invisible lg:visible ">Browse <span class="text-[#FFDC26]">4</span>Pets</a>
+
+                </div>
+                <!-- middle -->
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li>
+                      <details>
+                        <summary>Breeds</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <!-- right side -->
+                <div class="navbar-end  invisible lg:visible lg:flex gap-4">
+                    <!-- icons -->
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- buttons -->
+                     <a class="btn btn-outline btn-warning ">Login</a>
+                  <a class="btn bg-[#FFDC26]">Button</a>
+
+                </div>
+
+                <!-- responsive navbar options -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-[#FFF9F4]
+                      rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                      <li><a>Find a pet</a></li>
+                      <li>
+                        <a>Breeds</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>contact us</a></li>
+                    </ul>
+                  </div>
+              </div>
+        </section>
+
+
+        <!-- banner -->
+         <section>
+            <div class="hero min-h-screen">
+                <div class="hero-content flex-col flex-col-reverse">
+                  <img class="w-full lg:p-20 lg:relative"
+                    src="c1-assets/cat-big.png"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="lg:absolute w-full lg:w-1/4 lg:top-72 lg:left-96 p-10">
+                    <h1 class="text-5xl font-bold ">Pamper Your Pet, Because They Deserve the Bes</h1>
+                    <p class="py-6">
+                        Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
+                    </p>
+                    <button class="btn w-28 bg-[#FFDC26]">Find a pet</button>
+                  </div>
+                </div>
+              </div>
+         </section>
+
+     </header>
+    
+</body>
+</html>
